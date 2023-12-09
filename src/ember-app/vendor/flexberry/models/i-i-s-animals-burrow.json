@@ -1,0 +1,77 @@
+﻿{
+  "name": "IISAnimalsBurrow",
+  "modelName": "i-i-s-animals-burrow",
+  "className": "Burrow",
+  "nameSpace": "IIS.Animals",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "forest",
+      "relatedTo": "i-i-s-animals-forest",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "animal",
+      "relatedTo": "i-i-s-animals-animal",
+      "inverse": "burrows"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "BurrowE",
+      "modelName": "i-i-s-animals-burrow",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Forest",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Forest",
+          "name": "forest",
+          "relatedTo": "i-i-s-animals-forest",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
