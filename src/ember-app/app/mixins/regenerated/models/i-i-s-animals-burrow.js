@@ -37,7 +37,10 @@ export let defineProjections = function (modelClass) {
   modelClass.defineProjection('BurrowE', 'i-i-s-animals-burrow', {
     name: attr('Name', { index: 0 }),
     forest: belongsTo('i-i-s-animals-forest', 'Forest', {
-      name: attr('Name', { index: 2, hidden: true })
+      name: attr('Name', { index: 2, hidden: true }),
+      country: belongsTo('i-i-s-animals-country', '', {
+        name: attr('', { index: 3 })
+      }, { index: -1, hidden: true })
     }, { index: 1, displayMemberPath: 'name' })
   });
 };

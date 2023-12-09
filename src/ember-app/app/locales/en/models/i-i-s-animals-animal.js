@@ -13,6 +13,12 @@ export default {
           __caption__: 'Forest',
           name: {
             __caption__: 'Name'
+          },
+          country: {
+            __caption__: '',
+            name: {
+              __caption__: ''
+            }
           }
         }
       }

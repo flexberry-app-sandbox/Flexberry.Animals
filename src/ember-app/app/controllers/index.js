@@ -22,19 +22,19 @@ export default Controller.extend({
             link: 'i-i-s-animals-forest-l',
             caption: i18n.t('forms.application.sitemap.animals.i-i-s-animals-forest-l.caption'),
             title: i18n.t('forms.application.sitemap.animals.i-i-s-animals-forest-l.title'),
-            icon: 'tags',
+            icon: 'suitcase',
             children: null
           }, {
             link: 'i-i-s-animals-animal-l',
             caption: i18n.t('forms.application.sitemap.animals.i-i-s-animals-animal-l.caption'),
             title: i18n.t('forms.application.sitemap.animals.i-i-s-animals-animal-l.title'),
-            icon: 'paperclip',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-animals-country-l',
             caption: i18n.t('forms.application.sitemap.animals.i-i-s-animals-country-l.caption'),
             title: i18n.t('forms.application.sitemap.animals.i-i-s-animals-country-l.title'),
-            icon: 'file',
+            icon: 'paperclip',
             children: null
           }]
         }

@@ -31,7 +31,8 @@ namespace IIS.Animals
     [View("BurrowE", new string[] {
             "Name as \'Name\'",
             "Forest as \'Forest\'",
-            "Forest.Name as \'Name\'"}, Hidden=new string[] {
+            "Forest.Name as \'Name\'",
+            "Forest.Country.Name"}, Hidden=new string[] {
             "Forest.Name"})]
     [MasterViewDefineAttribute("BurrowE", "Forest", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Name")]
     public class Burrow : ICSSoft.STORMNET.DataObject

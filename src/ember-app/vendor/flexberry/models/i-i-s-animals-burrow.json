@@ -50,7 +50,29 @@
           "lookupValue": "Name",
           "lookupValueField": "name",
           "relationName": "Forest",
-          "belongsTo": [],
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Forest.Country",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "name",
+                  "caption": "",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "country",
+              "relatedTo": "i-i-s-animals-country",
+              "inverse": null
+            }
+          ],
           "hidden": false,
           "attrs": [
             {
